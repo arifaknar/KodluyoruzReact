@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const getData = (userId) => {
-  return new Promise(async (resolve, reject) => {
+const getData = async(userId) => {
+   
     try {
 
          const { data: users } = await axios(
@@ -12,11 +12,11 @@ const getData = (userId) => {
         );
         
        
-      resolve([users,post1]);
+      return [users,post1];
     } catch (err) {
-      reject(err);
+      return err;
     }
-  });
+ 
 };
 
 export default getData
