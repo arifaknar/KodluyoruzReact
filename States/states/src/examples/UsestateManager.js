@@ -6,7 +6,7 @@ export default function UsestateManager() {
 
     return (
           <div  style={{display:"flex",justifyContent:"center",alignItems:"center",color:"aqua"}}>
-        <h1> arif : {counter} </h1> 
+        <h1 style={{borderBottom:"5px solid gray"}}> arif : {counter} </h1> 
         <button onClick={()=>setCounter(counter+1)}  style={{margin:"20px"}}>Arttır</button>
         <button onClick={()=>setCounter(counter-1)}>Azalt</button>
       
