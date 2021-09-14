@@ -12,7 +12,7 @@ export default function UseStateObject() {
             
             <hr></hr>
             {/* ...adress */}
-                <button onClick={()=>{setAdress({city:"İstanbul",street:"Ümraniye",city:"Mersin"})}}>Şehri  Güncelle</button>
+                <button onClick={()=>{setAdress({street:"Ümraniye",city:"Mersin"})}}>Şehri  Güncelle</button>
             
 
         </div>

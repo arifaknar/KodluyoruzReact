@@ -14,6 +14,7 @@ export default function UseStateArray() {
             <hr></hr>
             
         </div>
+        
         <div style={{textAlign:"center"}}><button onClick={()=>{setCities([...cities,"aknar"])}}>Diziye Ekle</button></div>
        
        </>

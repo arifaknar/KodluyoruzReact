@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 
 export default function UseStateInput() {
 
-    const [form,setForm]=useState({name:'name',surName:"surName"})
+    const [form,setForm]=useState({name:'name',surName:"surName"}) // Object State Kullanımı
     
 
-    const changeForm=(e)=>setForm({...form,[e.target.name]:e.target.value})
+    const changeForm=(e)=>setForm({...form,[e.target.name]:e.target.value}) 
+    //e.target.name ile değişiklik olan inputun name değerini yakalıyor.
+    //e.target.value ile giriş yapılan değeri  object içerisinde algılanan name değerine göre atıyor ve ilgili propertyi değiştiriyor.
     return (
         <div style={{textAlign:"center"}}>
             <hr></hr>
